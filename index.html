@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cafe</title>
+<link href="css/bootstrap-5.3.8.css" rel="stylesheet" type="text/css">
+<style>
+  /* 1. 設定高級字體 (全站套用) */
+  body, h1, h2, h3, h4, h5, p, a, div {
+      font-family: 'Noto Serif TC', serif !important;
+      letter-spacing: 1.5px;
+  }
+
+  /* 2. 視差滾動特效 (針對大圖背景) */
+  .jumbotron {
+      background-attachment: fixed !important; /* 這行就是讓背景定住的魔法 */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  /* 3. 甜點卡片懸浮特效 */
+  .card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none; /* 去掉邊框更簡潔 */
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important;
+  }
+
+  /* 4. 圓形飲料特效 */
+  .rounded-circle {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+  }
+  .rounded-circle:hover {
+    transform: scale(1.15) rotate(3deg);
+  }
+</style>
+
+	</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(62, 39, 35, 0.95); box-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="font-weight: bold; letter-spacing: 1px;">早睡晚起</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">首頁</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#dessert">美味甜點</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#drink">嚴選飲品</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">關於我們</a>
+        </li>
+        <li class="nav-item">
+  <a class="nav-link btn btn-outline-light btn-sm ms-2" href="https://docs.google.com/forms" target="_blank" style="border-radius: 20px; padding-left: 15px; padding-right: 15px;">線上訂位</a>
+</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+	<div class="jumbotron text-center" style="margin-top: 70px; height: 600px; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-shadow: 2px 2px 4px #000000; background-image: url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=1920&q=80');">
+    <h1 class="display-4">早睡晚起</h1>
+    <p class="lead">一杯手沖，一份甜點，享受城市裡的寧靜。</p>
+    <a class="btn btn-warning btn-lg" href="#" role="button" style="margin-top: 20px;">查看美味菜單</a>
+</div>
+<script src="js/popper-2.11.8.min.js"></script>
+<script src="js/bootstrap-5.3.8.js"></script>
+</body>
+</html>
+
+<div class="container" id="dessert" style="margin-top: 60px; margin-bottom: 60px;">
+  <h2 class="text-center" style="margin-bottom: 40px; color: #5D4037; font-weight: bold;">本季主打甜點</h2>
+  
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="提拉米蘇">
+        <div class="card-body">
+          <h5 class="card-title">經典提拉米蘇</h5>
+          <p class="card-text text-muted">濃郁的馬斯卡彭起司，搭配吸滿咖啡酒的手指餅乾。</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="h5 mb-0 text-warning">$120</span>
+            <a href="#" class="btn btn-outline-dark btn-sm">加入購物車</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="草莓蛋糕">
+        <div class="card-body">
+          <h5 class="card-title">草莓鮮奶油蛋糕</h5>
+          <p class="card-text text-muted">使用當季新鮮大湖草莓，酸甜適中，口感綿密。</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="h5 mb-0 text-warning">$150</span>
+            <a href="#" class="btn btn-outline-dark btn-sm">加入購物車</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1551879400-111a9087cd86?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="蒙布朗">
+        <div class="card-body">
+          <h5 class="card-title">法式蒙布朗</h5>
+          <p class="card-text text-muted">經典栗子泥製作，帶有淡淡萊姆酒香氣。</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="h5 mb-0 text-warning">$140</span>
+            <a href="#" class="btn btn-outline-dark btn-sm">加入購物車</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container" id="drink" style="margin-bottom: 60px;">
+  <h2 class="text-center" style="margin-bottom: 40px; color: #5D4037; font-weight: bold;">嚴選咖啡與飲品</h2>
+  
+  <div class="row text-center">
+    <div class="col-md-4">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=300&h=300&q=80" class="rounded-circle shadow" alt="拿鐵" style="width: 200px; height: 200px; object-fit: cover; margin-bottom: 20px;">
+      <h4>經典拿鐵</h4>
+      <p class="text-muted">濃縮咖啡與香醇鮮奶的完美比例。</p>
+      <div class="d-flex justify-content-center align-items-center">
+        <span class="text-warning h5 mb-0 me-3">$100</span>
+        <a href="#" class="btn btn-outline-dark btn-sm">加入購物車</a>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=300&h=300&q=80" class="rounded-circle shadow" alt="手沖" style="width: 200px; height: 200px; object-fit: cover; margin-bottom: 20px;">
+      <h4>耶加雪菲手沖</h4>
+      <p class="text-muted">帶有淡淡花香與柑橘果酸的清爽口感。</p>
+      <div class="d-flex justify-content-center align-items-center">
+        <span class="text-warning h5 mb-0 me-3">$130</span>
+        <a href="#" class="btn btn-outline-dark btn-sm">加入購物車</a>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=300&h=300&q=80" class="rounded-circle shadow" alt="果茶" style="width: 200px; height: 200px; object-fit: cover; margin-bottom: 20px;">
+      <h4>夏日水果冰茶</h4>
+      <p class="text-muted">新鮮百香果與鳳梨熬煮，消暑首選。</p>
+      <div class="d-flex justify-content-center align-items-center">
+        <span class="text-warning h5 mb-0 me-3">$110</span>
+        <a href="#" class="btn btn-outline-dark btn-sm">加入購物車</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer style="background-color: #3E2723; color: white; padding-top: 40px; padding-bottom: 40px; margin-top: 60px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>☕ 關於我們</h5>
+        <p>我們致力於提供城市中最溫暖的角落。<br>每一杯咖啡，都是一個故事。</p>
+        <p>
+          <strong>地址：</strong> 臺南市永康區南台街1號<br>
+          <strong>電話：</strong> (02) 2345-6789<br>
+          <strong>營業時間：</strong> 10:00 - 20:00 (週一公休)
+        </p>
+      </div>
+      
+      <div class="col-md-6 text-md-end">
+         <h5>追蹤我們</h5>
+         <p>Follow us on social media</p>
+         <a href="#" class="btn btn-outline-light btn-sm">Instagram</a>
+         <a href="#" class="btn btn-outline-light btn-sm">Facebook</a>
+         <p style="margin-top: 20px; font-size: 12px; color: #aaa;">
+           &copy; 2025 MyCafe All Rights Reserved.
+         </p>
+      </div>
+    </div>
+  </div>
+</footer><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58751.33552721207!2d120.1858093979942!3d23.02529700991237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e771f2995cba5%3A0x3bfd449f1e46ffef!2z5Y2X6Ie656eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1767620159241!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
